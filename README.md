@@ -35,7 +35,7 @@ Estas consultas nos permitiron tocar temas como joins,cte's , funciones ventana,
 Se diseñaron índices específicos en columnas clave utilizadas en:
 -joins
 -filtros temporales
--relaciones entre etapas
+-relaciones entre etapas.
 El impacto se evaluó mediante EXPLAIN ANALYZE, comparación de índices vs sin índices y escenario de 1k,10k y 100k.
 
 🛠️ Tecnologías utilizadas:
