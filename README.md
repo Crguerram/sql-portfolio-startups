@@ -36,7 +36,11 @@ Se diseñaron índices específicos en columnas clave utilizadas en:
 -joins
 -filtros temporales
 -relaciones entre etapas.
-El impacto se evaluó mediante EXPLAIN ANALYZE, comparación de índices vs sin índices y escenarios de 1k,10k y 100k.
+El impacto se evaluó mediante EXPLAIN ANALYZE, comparación de índices vs sin índices y escenarios de 1k,10k y 100k (los screenshots de los resultados estan en el PDF)
+El orden de ejecución fue el siguiente: 
+-se corren las consultas antes de crear índices
+-creo los índices
+-se vuelven a correr las misma consultas
 
 🛠️ Tecnologías utilizadas:
 PostgreSQL
